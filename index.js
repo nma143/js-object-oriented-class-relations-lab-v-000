@@ -39,6 +39,20 @@ class Passenger
   {
     return store.trips.filter(function(trip){return trip.passengerId == this.id}.bind(this));
   }
+
+  drivers()
+  {
+    let drivers = [];
+    for (let trip of this.trips())
+    {
+        drivers.push(trip.driver());
+    }
+    return drivers;
+
+  }
+
+
+  
 }
 
 let tripId = 0;
