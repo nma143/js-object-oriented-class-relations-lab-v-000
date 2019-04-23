@@ -32,4 +32,3 @@ class Trip
     store.passengers.push(this)
   }
 }
-
