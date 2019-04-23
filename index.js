@@ -1,5 +1,5 @@
 let driverId = 0;
-class Driver ()
+class Driver
 {
   constructor (name)
   {
