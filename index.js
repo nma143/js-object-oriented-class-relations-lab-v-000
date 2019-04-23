@@ -16,6 +16,12 @@ class Driver
   }
   passengers()
   {
+    let passengers = [];
+    for (let trip of trips())
+    {
+        passengers.push(trip.passenger());
+    }
+    return passengers;
 
   }
 }
