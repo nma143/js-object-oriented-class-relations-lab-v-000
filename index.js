@@ -16,7 +16,7 @@ class Driver
   }
   passengers()
   {
-    return store.trips.filter(function(trip){return trip.driverId == this.id}.bind(this));
+    return store.passengers.filter(function(trip){return trip.passengerId == this.id}.bind(this));
   }
 }
 
